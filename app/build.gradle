@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains' , module:'annotations'
+    }
+
+    defaultConfig {
+        applicationId "com.example.wastesorting"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //Arouter的配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    resourcePrefix "app_"
+}
+
+dependencies {
+
+    implementation 'com.google.android.material:material:1.2.1'
+    annotationProcessor rootProject.ext.annotationLibs
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation project(':baselibs')
+    if (!isModule.toBoolean()) {
+        implementation project(':distinguish')
+        implementation project(':recover')
+        implementation project(':guide')
+        implementation project(':mine')
+    }
+}
