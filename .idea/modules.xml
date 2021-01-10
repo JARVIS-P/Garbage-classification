@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WasteSorting.iml" filepath="$PROJECT_DIR$/.idea/modules/WasteSorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WasteSorting.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WasteSorting.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baselibs/WasteSorting.baselibs.iml" filepath="$PROJECT_DIR$/.idea/modules/baselibs/WasteSorting.baselibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/WasteSorting.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/WasteSorting.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/distinguish/WasteSorting.distinguish.iml" filepath="$PROJECT_DIR$/.idea/modules/distinguish/WasteSorting.distinguish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guide/WasteSorting.guide.iml" filepath="$PROJECT_DIR$/.idea/modules/guide/WasteSorting.guide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mine/WasteSorting.mine.iml" filepath="$PROJECT_DIR$/.idea/modules/mine/WasteSorting.mine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/WasteSorting.mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/WasteSorting.mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recover/WasteSorting.recover.iml" filepath="$PROJECT_DIR$/.idea/modules/recover/WasteSorting.recover.iml" />
+    </modules>
+  </component>
+</project>

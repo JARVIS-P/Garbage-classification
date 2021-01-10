@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./recover/libs/component_common_sdk_1.2.0.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/recover/libs/component_common_sdk_1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
