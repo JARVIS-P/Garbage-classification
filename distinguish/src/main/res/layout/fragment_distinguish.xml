@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/distinguish_frag"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DistinguishFragment"
+    tools:ignore="ResourceName">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height= "20dp"
+                    android:background="@mipmap/search"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="14"
+                android:textSize="16dp"
+                android:hint="请输入要搜索的垃圾名称"/>
+            <TextView
+                android:id="@+id/search_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="搜索"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hot"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:paddingHorizontal="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:background="@drawable/hot"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="大家正在搜:"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="37dp"
+                            android:background="@drawable/shape_text"
+                            android:text="  作业本  "
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            tools:ignore="InvalidId" />
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:background="@drawable/shape_text"
+                            android:text=" 家养绿植 "
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="6dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/shape_text"
+                        android:text="  过期指甲油  "
+                        android:textColor="@color/black"
+                        android:textSize="22dp" />
+
+                    <LinearLayout
+                        android:layout_marginVertical="6dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/shape_text"
+                            android:id="@+id/text4"
+                            android:text="  电池  "
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="60dp"
+                            android:background="@drawable/shape_text"
+                            android:id="@+id/text5"
+                            android:text="  塑料袋  "
+                            android:textColor="@color/black"
+                            android:textSize="24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="InvalidId" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginLeft="110dp"
+                        android:background="@drawable/shape_text"
+                        android:id="@+id/text6"
+                        android:text="  水果  "
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="InvalidId" />
+                    <LinearLayout
+                        android:layout_marginVertical="6dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/shape_text"
+                            android:id="@+id/text7"
+                            android:text="  矿泉水瓶  "
+                            android:textColor="@color/black"
+                            android:textSize="23dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="35dp"
+                            android:background="@drawable/shape_text"
+                            android:id="@+id/text8"
+                            android:text="  笔记本电脑  "
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:ignore="InvalidId" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kkkk"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:layout_marginVertical="90dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp">
+                <View
+                    android:id="@+id/search_camera"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle"
+                    tools:ignore="ButtonStyle" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp">
+                <View
+                    android:id="@+id/search_say"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle"
+                    tools:ignore="ButtonStyle" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/yuyin" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.example.distinguish.RecordView
+        android:id="@+id/record_view"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"/>
+</FrameLayout>
