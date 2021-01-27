@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mine_">用户名</string>
+    <string name="mine__456482148">456482148</string>
+</resources>

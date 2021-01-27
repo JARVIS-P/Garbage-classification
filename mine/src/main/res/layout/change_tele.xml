@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <include layout="@layout/head_bar"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:paddingLeft="15dp"
+                android:text="更换手机号码"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="密保手机号，绑定手机号已整合为统一的手机号码，本次操作将同步变更。"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.06"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="原手机号："/>
+
+            <EditText
+                android:id="@+id/oldTele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入原手机号"/>
+        </LinearLayout>
+
+        <!--新密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新手机号："/>
+
+            <EditText
+                android:id="@+id/newTele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新手机号"/>
+        </LinearLayout>
+
+        <!--确认密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="验  证  码："/>
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入确认手机号" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="获取验证码" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/change_tele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:text="确定修改"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
