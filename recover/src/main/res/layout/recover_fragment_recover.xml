@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recover_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+    </com.baidu.mapapi.map.TextureMapView>
+
+    <com.example.recover.MyScroller
+        android:id="@+id/my_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/my_image"
+                android:src="@drawable/bottom"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/open_image"
+                android:layout_gravity="center"
+                android:src="@drawable/up"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+
+            <View
+                android:background="#C0C0C0"
+                android:layout_width="wrap_content"
+                android:layout_height="0.75dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <FrameLayout
+                    android:background="@drawable/round_g"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp">
+
+                    <ImageView
+                        android:id="@+id/add_image"
+                        android:src="@drawable/add"
+                        android:layout_gravity="center"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <FrameLayout
+                    android:background="@drawable/round_b"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp">
+
+                    <ImageView
+                        android:id="@+id/route_image"
+                        android:src="@drawable/route"
+                        android:layout_gravity="center"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/ashcan_image"
+                    android:src="@drawable/ashcan"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <FrameLayout
+                    android:background="@drawable/round_g"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp">
+
+                    <ImageView
+                        android:id="@+id/refresh_image"
+                        android:src="@drawable/refresh"
+                        android:layout_gravity="center"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"/>
+
+                <TextView
+                    android:text="增添回收点"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"/>
+
+                <TextView
+                    android:text="取消规划"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"/>
+
+                <TextView
+                    android:text="附近回收点"
+                    android:lines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"/>
+
+                <TextView
+                    android:text="刷新规划"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:id="@+id/up_image"
+                android:src="@drawable/up02"
+                android:layout_width="30dp"
+                android:layout_height="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+
+            <View
+                android:background="#C0C0C0"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/prompt_text"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="目标回收点的图片"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:padding="10dp"
+                    android:visibility="invisible"
+                    android:id="@+id/aims_image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </com.example.recover.MyScroller>
+
+</FrameLayout>
